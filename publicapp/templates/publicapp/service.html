@@ -1,0 +1,207 @@
+<html lang="en"><head>
+    <title>Article Summarization</title>
+        
+        <!-- Meta tag Keywords -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Intrend Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+        <script type="application/x-javascript">
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+    
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!--// Meta tag Keywords -->
+        
+        <link href="../static/publicapp/css/slider.css" type="text/css" rel="stylesheet" media="all"> 
+        
+        <!-- css files -->
+        <link rel="stylesheet" href="../static/publicapp/css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+        <link rel="stylesheet" href="../static/publicapp/css/style.css" type="text/css" media="all"> <!-- Style-CSS --> 
+        <link rel="stylesheet" href="../static/publicapp/css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
+        <!-- //css files -->
+        
+        <!-- testimonials css -->
+        <link rel="stylesheet" href="../static/publicapp/css/flexslider.css" type="text/css" media="screen" property=""><!-- flexslider css -->
+        <!-- //testimonials css -->
+    
+        <!-- web-fonts -->
+        <link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+        <!-- //web-fonts -->
+        
+    </head>
+    
+    <body>
+    
+    <!-- banner -->
+        <div class="banner" id="home"> 
+            <div class="cd-radial-slider-wrapper"> 
+               
+    <!--Header-->
+    <header>
+        <div class="container agile-banner_nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <h1><a class="navbar-brand" href="{% url 'home' %}">In <span class="display"> Sum</span></a></h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{% url 'service' %}">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'register' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+              
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <!-- //banner --> 
+    
+    <br><br><br><br>
+
+    <!-- services -->
+    <section class="wthree-row py-5">
+        <div class="container py-lg-5 py-3">
+            <div class="row d-flex justify-content-center">
+                <div class="card col-lg-3 col-md-6 border-0">
+                    <div class="card-body bg-light pl-0 pr-0 pt-0">
+                        <h5 class=" card-title titleleft">News Summary</h5>
+                        <p class="card-text mb-3">You can easily summarize a news article using 'InSum'. 
+                            It will help you to understand the content. </p>
+                    </div>
+                    <img class="card-img-top" src="../static/publicapp/images/a1.jpg" alt="Card image cap">
+                </div>
+                
+                <div class="card col-lg-3 col-md-6 border-0 mt-lg-0 mt-5 ">
+                    <img class="card-img-top " src="../static/publicapp/images/a3.jpg " alt="Card image cap ">
+                    <div class="card-body bg-light text-center">
+                        <h5 class="card-title pt-3">Book Summary</h5>
+                        <p class="card-text mb-3 ">'InSum' will help you to summarize an entire book within secondes.
+                             So that you will get the story without reading the book. </p>
+                    </div>
+                </div>
+
+                <div class="card col-lg-3 col-md-6 border-0">
+                    <div class="card-body bg-light pl-0 pr-0 pt-0">
+                        <h5 class=" card-title titleleft">Wiki Summary</h5>
+                        <p class="card-text mb-3">Each wikipedia pages consists of massive amount of texts.
+                             Wikipedia is for help but the contents in page make the things complicated. 
+                             'InSum' will help you to get the core content.</p>
+                    </div>
+                    <img class="card-img-top" src="../static/publicapp/images/a1.jpg" alt="Card image cap">
+                </div>
+                
+                <div class="card col-lg-3 col-md-6 border-0 mt-lg-0 mt-5 ">
+                    <img class="card-img-top " src="../static/publicapp/images/a3.jpg " alt="Card image cap ">
+                    <div class="card-body bg-light text-center">
+                        <h5 class="card-title pt-3">Journal summary</h5>
+                        <p class="card-text mb-3 ">'InSum' will help you to summarize the journals without loosing its technical contents.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- //services -->
+    
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container py-md-5">
+            <div class="footer-logo mb-5 text-center">
+                <a class="navbar-brand" href="#">In <span class="display"> Sum</span></a>
+            </div>
+            <div class="footer-grid">
+                <div class="agileits_w3layouts-copyright mt-4 text-center">
+                    <p>Let's Summarize Your Text Articles Here...</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    
+    <!-- js-scripts -->		
+    
+        <!-- js -->
+        <script type="text/javascript" src="../static/publicapp/js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="../static/publicapp/js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap --> 
+        <!-- //js -->
+        
+        <!-- banner js -->
+        <script src="../static/publicapp/js/snap.svg-min.js"></script>
+        <script src="../static/publicapp/js/main.js"></script> <!-- Resource jQuery -->  
+        <!-- //banner js --> 
+    
+        <!-- flexSlider --><!-- for testimonials -->
+        <script defer="" src="../static/publicapp/js/jquery.flexslider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function(){
+              $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(slider){
+                  $('body').removeClass('loading');
+                }
+              });
+            });
+        </script>
+        <!-- //flexSlider --><!-- for testimonials -->
+    
+        <!-- start-smoth-scrolling -->
+        <script src="../static/publicapp/js/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="../static/publicapp/js/move-top.js"></script>
+        <script type="text/javascript" src="../static/publicapp/js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event){		
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                });
+            });
+        </script>
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                    var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear' 
+                    };
+                */
+                                    
+                $().UItoTop({ easingType: 'easeOutQuart' });
+                                    
+                });
+        </script>
+        <!-- //here ends scrolling icon -->
+        <!-- start-smoth-scrolling -->
+        
+    <!-- //js-scripts -->
+    
+    
+    <a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a></body></html>
+
+    
