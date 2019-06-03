@@ -1,0 +1,17 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br><br><br><br>
+<form>
+    <div class="card-body bg-light text-center">
+        <h5 class="card-title pt-3">Hello {{prof.name}}</h5>
+        <br>
+        <p class="card-text mb-3 ">{{prof.name}} {{prof.lname}}</p>
+        <p class="card-text mb-3 ">{{prof.dob}}</p>
+        <p class="card-text mb-3 ">{{prof.email}}</p>
+        <br>
+        <a href="{% url 'edit' prof.id %}" class="btn">Edit Profile</a>
+    </div>
+</form>
+
+{% endblock %}

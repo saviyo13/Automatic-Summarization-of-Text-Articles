@@ -1,0 +1,36 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br>
+<section class="contact py-5">
+        <div class="container">
+            <h2 class="heading text-capitalize mb-sm-5 mb-4"> Contact Us </h2>
+                <div class="mail_grid_w3l">
+                    <form action="{% url 'ucontact' %}" method="POST">{% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 contact_left_grid" data-aos="fade-right">
+                                <div class="contact-fields-w3ls">
+                                    <input type="text" value="{{data.name}}" readonly>
+                                </div>
+                                <div class="contact-fields-w3ls">
+                                    <input type="email" value="{{data.email}}" readonly>
+                                </div>
+                                <div class="contact-fields-w3ls">
+                                    <input type="text" name="c3" placeholder="Subject" required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 contact_left_grid" data-aos="fade-left">
+                                <div class="contact-fields-w3ls">
+                                    <textarea name="c4" placeholder="Message..." required=""></textarea>
+                                </div>
+                                <input type="submit" value="Submit">
+                            </div>
+                        </div>
+    
+                    </form>
+                </div>
+            
+        </div>
+    </section>
+
+{% endblock %}

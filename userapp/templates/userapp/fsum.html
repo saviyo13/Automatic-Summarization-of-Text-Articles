@@ -1,0 +1,38 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br>
+<body style="background-image:url(../static/userapp/images/3.jpg);background-repeat:no-repeat;background-size: cover">
+
+    <center>
+    
+    <form role="form" method="POST" action="{% url 'fsum' %}" enctype="multipart/form-data" >{% csrf_token %}
+    
+      <div>
+        <br>
+        <br>
+        <br>
+      </div>
+    <div>
+        <br><br><br><br>
+        <table style="position: relative;left:10%">
+            <tr>
+                <td><h2><b style="color: black">Input the file : </b></h2></td>
+                <td><input type="file" name="text1"></td>
+            </tr>
+        </table>
+    </div>
+    <br><br><br>
+    <div>
+      <button class="btn"><b>SUMMARIZE</b></button>
+    </div>
+    <br><br><br>
+    </form>
+    
+    </center>
+    
+    
+    </body>
+                        
+
+{% endblock %}

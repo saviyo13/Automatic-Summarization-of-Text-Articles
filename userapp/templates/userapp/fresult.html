@@ -1,0 +1,37 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br>
+
+<body style="background-image:url(../static/userapp/images/4.jpg);background-repeat:no-repeat;background-size: cover">
+
+    <center>
+    
+    <form role="form" method="POST" action="{% url 'fresult' %}" >{% csrf_token %}
+    
+      <div>
+        <br>
+        <br>
+        <br>
+      </div>
+    <div>
+    <textarea style="background-color: gainsboro" readonly rows="20"  cols="100" >
+    {{data.outputtxt}}
+    </textarea>
+    </div>
+    <br><br>
+    <audio controls>
+      <source src="{{data.audio.url}}" type="audio/mp3">
+        your browser does not support the audio element.
+    </audio>
+    <br>
+    <h1 style="color:black;font-size: 350%;font-family: Arial, Helvetica, sans-serif"><i><b>Thank you...</b></i></h1>
+    <br>
+    </form>
+    
+    </center>
+    
+</body>
+
+    {% endblock %}
+                        

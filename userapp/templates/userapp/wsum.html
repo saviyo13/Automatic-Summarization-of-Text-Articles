@@ -1,0 +1,34 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br>
+<body style="background-image:url(../static/userapp/images/3.jpg);background-repeat:no-repeat;background-size: cover">
+
+    <center>
+    
+    <form role="form" method="POST" action="{% url 'wsum' %}" >{% csrf_token %}
+    
+      <div>
+        <br>
+        <br>
+        <br>
+      </div>
+    <div>
+      <textarea style="background-color: gainsboro" name="text1" rows="20"  cols="100" placeholder="{{message}}" required></textarea>
+    </div>
+    
+    <br>
+    
+    <div>
+      <button class="btn"><b>SUMMARIZE</b></button>
+    </div>
+    
+    </form>
+    
+    </center>
+    
+    
+    </body>
+                        
+
+{% endblock %}

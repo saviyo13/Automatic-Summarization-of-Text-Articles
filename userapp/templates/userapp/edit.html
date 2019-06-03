@@ -1,0 +1,45 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br><br><br><br>
+<form action="{% url 'edit' data.id %}?id=data.id" method="POST">{% csrf_token %}
+        <div class="card-body bg-light text-center">
+            <h5 class="card-title pt-3">Edit Your Profile</h5>
+            <br>
+            <table style="position: fixed;left: 42%">
+                <br>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" value="{{data.name}}" name="t1"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" value="{{data.lname}}" name="t2"></td>                
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="text" value="{{data.gender}}" name="t3" readonly></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="text" value="{{data.dob}}" name="t4" readonly></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" value="{{data.email}}" name="t5"></td>
+                </tr>
+                <tr>
+                    <td>Designation:</td>
+                    <td><input type="text" value="{{data.designation}}" name="t6"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" value="{{item.password}}" name="t7"></td>
+                </tr>
+            </table>
+            <br><br><br><br><br><br><br><br><br><br>
+            <input type="submit" value=UPDATE>
+
+        </div>
+    </form>
+
+{% endblock %}

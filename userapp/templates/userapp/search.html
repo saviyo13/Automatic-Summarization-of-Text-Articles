@@ -1,0 +1,21 @@
+{% extends "userapp/userlayout.html" %}
+{% block content %}
+
+<br><br><br><br><br><br>
+<form>
+    <div class="card-body bg-light text-center">
+        <h5 class="card-title pt-3">Choose an input type</h5>
+        <br>
+        <p class="card-text mb-3 ">for text inputs</p>
+        <a href="{% url 'sum' %}" class="btn">TEXT</a>
+        <br><br>
+        <p class="card-text mb-3 ">for file inputs</p>
+        <a href="{% url 'fsum' %}" class="btn">FILE</a>
+        <br><br>
+        <p class="card-text mb-3 ">for link inputs</p>
+        <a href="{% url 'wsum' %}" class="btn">LINK</a>
+        <br><br>
+    </div>
+</form>
+
+{% endblock %}
