@@ -1,0 +1,67 @@
+{% extends "adminapp/adminlayout.html" %}
+{% block content %}
+
+
+<body>
+    <div class="wrapper">
+        <div id="content">
+
+            <!-- main-heading -->
+            <h2 class="main-title-w3layouts mb-2 text-center">Users</h2>
+            <!--// main-heading -->
+
+            <!-- Grids Content -->
+            <section class="grids-section bd-content">
+
+                <!-- Grids Info -->
+                <div class="outer-w3-agile mt-3">
+                    <h4 class="tittle-w3-agileits mb-4">Registered Users</h4>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                
+                                <th class="text-center">
+                                    First Name
+                                </th>
+                                <th class="text-center">
+                                    Last Name
+                                </th>
+                                <th class="text-center">
+                                    Gender
+                                </th>
+                                <th class="text-center">
+                                    DOB
+                                </th>
+                                <th class="text-center">
+                                    Email ID
+                                </th>
+                                <th class="text-center">
+                                    Designation
+                                </th>
+                                <th class="text-center">
+                                    Authorization
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in data %}
+                            <tr>
+                                <td>{{i.name}}</td>
+                                <td>{{i.lname}}</td>
+                                <td>{{i.gender}}</td>
+                                <td>{{i.dob}}</td>
+                                <td>{{i.email}}</td>
+                                <td>{{i.designation}}</td>
+                                <td><a href="{% url 'approve' i.id %}">{{i.approve}}</a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </section>   
+        </div>
+    </div>
+
+</body>
+{% endblock %}

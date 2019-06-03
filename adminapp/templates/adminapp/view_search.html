@@ -1,0 +1,57 @@
+{% extends "adminapp/adminlayout.html" %}
+{% block content %}
+
+
+<body>
+    <div class="wrapper">
+        <div id="content">
+
+            <!-- main-heading -->
+            <h2 class="main-title-w3layouts mb-2 text-center">Searchs & Results</h2>
+            <!--// main-heading -->
+
+            <!-- Grids Content -->
+            <section class="grids-section bd-content">
+
+                <!-- Grids Info -->
+                <div class="outer-w3-agile mt-3">
+                    <h4 class="tittle-w3-agileits mb-4">Here are the articles and the reulted summaries...</h4>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">
+                                    Input Type
+                                </th>
+                                <th class="text-center">
+                                    Input Article
+                                </th>
+                                <th class="text-center">
+                                    Summarized Result
+                                </th>
+                                <th class="text-center">
+                                    Outputt Audio
+                                </th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in txt %}
+                            <tr>
+                                <td>{{i.inputtype}}</td>
+                                <td><textarea cols="40" rows="10" readonly>{{i.inputtxt}}</textarea></td>
+                                <td><textarea cols="40" rows="10" readonly>{{i.outputtxt}}</textarea></td>
+                                <td><audio controls>
+                                        <source src="{{i.audio.url}}" type="audio/mp3">
+                                          your browser does not support the audio element.
+                                      </audio></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </section>   
+        </div>
+    </div>
+
+</body>
+{% endblock %}
